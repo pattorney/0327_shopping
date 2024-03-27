@@ -2,6 +2,12 @@
   display: flex;
   justify-content: flex-end;
   margin: 30px;
+  margin-right: 55px;
+  cursor: pointer;
+}
+
+.mb-3{
+  width: 20vw;
 }
 
 .nav-section{
@@ -25,7 +31,6 @@
 }
 
 .search-box{
-    margin-top: 15px;
     margin-left: 50px;
 }
 
@@ -33,4 +38,14 @@ input[type="text"]{
     margin: 20px;
     margin-left: 10px;
 }
+
+.card{
+    margin-bottom: 25px;
+}
+
+.card:hover{
+  transform: scale(1.15)
+}
+
+
 
