@@ -1,3 +1,18 @@
+import React from 'react';
+
+const ProductDetail = () => {
+  return (
+    <div>
+      상품 상세 페이지
+    </div>
+  );
+}
+
+export default ProductDetail;
+
+
+/*상품 상세 페이지
+
 import React, { useEffect, useState } from 'react';
 import { Container, Col } from 'react-bootstrap';
 import { useParams } from 'react-router-dom';
@@ -39,3 +54,5 @@ const ProductDetail = () => {
 }
 
 export default ProductDetail;
+
+*/
