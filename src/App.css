@@ -34,6 +34,12 @@
     margin-left: 50px;
 }
 
+.search-iput{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+
 input[type="text"]{
     margin: 20px;
     margin-left: 10px;

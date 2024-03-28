@@ -29,7 +29,7 @@ const NavBar = () => {
         </ul>
       <div className="search-box">
         <FontAwesomeIcon icon={faSearch} />
-        <input type="text" />  
+        <input type="text" className="search-iput" placeholder="검색" />  
       </div>      
       </div>
       
