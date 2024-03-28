@@ -10,7 +10,7 @@ const NavBar = () => {
   const navigate = useNavigate();
   const goToLogin = () => {
     navigate("/login");
-  }
+  };
 
   return (
     <div>
@@ -19,7 +19,7 @@ const NavBar = () => {
         <div>로그인</div>
       </div>
       <div className="nav-section">
-        <img width="150px" alt="로고이미지" src="https://logolook.net/wp-content/uploads/2021/06/Samsung-Logo-1993.png" />
+        <img width="150px" alt="로고" src="https://logolook.net/wp-content/uploads/2021/06/Samsung-Logo-1993.png" />
       </div>
       <div className="menu-area">
         <ul className="menu-list">
@@ -27,10 +27,10 @@ const NavBar = () => {
           <li key={index}>{menu}</li>
           )}
         </ul>
-      <div className="search-box">
-        <FontAwesomeIcon icon={faSearch} />
-        <input type="text" className="search-iput" placeholder="검색" />  
-      </div>      
+        <div className="search-box">
+          <FontAwesomeIcon icon={faSearch} />
+          <input type="text" className="search-iput" placeholder="검색" />  
+        </div>      
       </div>
       
     </div>
