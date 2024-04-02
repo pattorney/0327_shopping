@@ -3,21 +3,20 @@ import ProductCard from '../component/ProductCard';
 import { Row, Col, Container } from 'react-bootstrap';
 import { useSearchParams } from 'react-router-dom';
 import { useParams } from 'react-router-dom';
+import { productAction } from '../redux/actions/productAction';
+import { useDispatch, useSelector } from 'react-redux';
 
 const ProductAll = () => {
   let {id} = useParams();
-  const [productList, setProductList] = useState([]);
+  const productList = useSelector(state=>state.product.productList);
   const [query, setQuery] = useSearchParams();
+  const dispatch = useDispatch();
 
-  const getProducts = async () => {
+  const getProducts = () => {
     let searchQurey = query.get("q") || "";
-//    let url = `https://my-json-server.typicode.com/pattorney/0327_shopping0327/products/?q=${searchQurey}`;
-    let url = `http://localhost:5000/products?q=${searchQurey}`;
-    let response = await fetch(url);
-    let data = await response.json();
-    setProductList(data);
-    setQuery(searchQurey);
-  }
+    console.log("쿼리값은?", searchQurey);
+    dispatch(productAction.getProducts(searchQurey));
+  };
 
   useEffect(() => {
     getProducts();
