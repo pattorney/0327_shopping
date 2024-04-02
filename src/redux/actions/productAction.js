@@ -1,6 +1,6 @@
 function getProducts (searchQurey) {
     return async (dispatch, getState) => {
-        let url = `https://my-json-server.typicode.com/pattorney/0327_shopping0327/products/?q=${searchQurey}`;
+        let url = `https://my-json-server.typicode.com/pattorney/0327_shopping/products/?q=${searchQurey}`;
 //        let url = `http://localhost:5000/products?q=${searchQurey}`;
         let response = await fetch(url);
         let data = await response.json();
